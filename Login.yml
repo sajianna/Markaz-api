@@ -1,0 +1,26 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://allalca.alca.life/api/Login
+  body:
+    type: json
+    data: "{\r
+
+      \    \"member_id\": \"6193/25\",\r
+
+      \    \"password\":\"9383413878\",\r
+
+      \    \"fcm_token\":\"\"\r
+
+      } "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

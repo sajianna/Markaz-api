@@ -1,0 +1,32 @@
+info:
+  name: OtherProfile
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: https://markazmuslim.astradevelops.in/api/OtherProfile
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer q0Pw9Gm3WC
+  body:
+    type: json
+    data: "{\r
+
+      \  \"member_id\":\"1234/25\",\r
+
+      \    \"amount\": \"100\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,0 +1,30 @@
+info:
+  name: Fcmtoken
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: https://markazmuslim.astradevelops.in/api/Fcmtoken
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"member_id\":\"0001/25\",\r
+
+      \    \"fcm_token\": \"fwbjoiUYRtm_LTH_3lxt8V:APA91bHL-YSvn4Pp_xa6UVTbwgPFJQUk7ClXa0ZSQTXZPSjeJCvXUf_8AT1FRX60uHPmUEFGB8kAQ2zKth-e3yvXSpZzqP1Sb5biaGpiQw9ugl33oBs0Xzs\"\r
+
+      } "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

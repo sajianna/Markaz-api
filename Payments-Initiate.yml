@@ -1,0 +1,40 @@
+info:
+  name: Payments/Initiate
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: https://markazmuslim.astradevelops.in/api/Payments/Initiate
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "Bearer "
+  body:
+    type: json
+    data: "{\r
+
+      \  \"amount\": \"30\",\r
+
+      \  \"email\": \"annaastra3878@gmail.com\",\r
+
+      \  \"phone\": \"9383413878\",\r
+
+      \  \"name\": \"astra\",\r
+
+      \  \"member_id\": \"31\",\r
+
+      \  \"product_info\": \"Membership Payment\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

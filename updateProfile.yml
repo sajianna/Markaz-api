@@ -1,0 +1,42 @@
+info:
+  name: updateProfile
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: https://markazmuslim.astradevelops.in/api/updateProfile
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "Bearer "
+  body:
+    type: json
+    data: "{\r
+
+      \     \"name\": \"astra123\",\r
+
+      \     \"email\":\"astra123@gmail.com\",\r
+
+      \     \"aadhar_no\":\"123434562345\",\r
+
+      \    \"image\": \"\",  // base64 string\r
+
+      \    \"contact\": \"9383413878\",\r
+
+      \    \"address\": \"Kanhangad, Kasaragod\",\r
+
+      \    \"dob\": \"12/03/1995\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
