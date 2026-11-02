@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer Sm36180vIU
+      value: Bearer Ri6up0zyCb
   auth: inherit
 
 settings:

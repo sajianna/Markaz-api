@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer q0Pw9Gm3WC
+      value: Bearer SmMei9TT4K
   body:
     type: json
     data: "{\r

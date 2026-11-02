@@ -5,18 +5,15 @@ info:
 
 http:
   method: POST
-  url: https://allalca.alca.life/api/Login
+  url: https://markazmuslim.astradevelops.in/api/Login
   body:
     type: json
-    data: "{\r
-
-      \    \"member_id\": \"6193/25\",\r
-
-      \    \"password\":\"9383413878\",\r
-
-      \    \"fcm_token\":\"\"\r
-
-      } "
+    data: |-
+      {
+          "member_id": "234/23",
+          "password":"9847000001",
+          "fcm_token":""
+      } 
   auth: inherit
 
 settings:
@@ -24,3 +21,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
