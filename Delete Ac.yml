@@ -1,0 +1,25 @@
+info:
+  name: Delete Ac
+  type: http
+  seq: 14
+
+http:
+  method: DELETE
+  url: https://mfssonline.in/api/UserAccount
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "Bearer "
+  body:
+    type: form-urlencoded
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
